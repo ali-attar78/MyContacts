@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+android:background="@drawable/add_ff"
+    android:layout_margin="10dp"
+
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:hint="Name"
+        android:id="@+id/add_user"
+        android:inputType="text"
+        android:backgroundTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+
+        android:textColorHint="#DDD7D7"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/add_user"
+        android:id="@+id/add_phone"
+        android:hint="Phone"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+
+        android:textColorHint="#DDD7D7"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add"
+        android:id="@+id/add_btn"
+
+        />
+
+
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contact_view"
+    android:layout_margin="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/pro_item"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile_pic"
+        android:scaleType="fitXY"
+        android:layout_margin="10dp"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pro_item"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:id="@+id/name_contact"
+        android:text="ali saburi"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_contact"
+        android:layout_alignLeft="@+id/name_contact"
+        android:layout_below="@+id/name_contact"
+        android:layout_marginTop="10dp"
+        android:textColor="#514E4E"
+        android:textSize="16sp"
+        android:text="09155125205"
+
+        />
+
+    <ImageView
+        android:id="@+id/diling_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/pro_item"
+        app:srcCompat="@drawable/icon_call" />
+
+    <ImageView
+        android:id="@+id/sms_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:layout_toLeftOf="@+id/diling_icon"
+
+        android:layout_alignBottom="@id/pro_item"
+        app:srcCompat="@drawable/icon_sms" />
+</RelativeLayout>
